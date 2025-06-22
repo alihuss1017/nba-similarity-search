@@ -33,7 +33,7 @@ def reduce_dimensions(df_scaled, n_components=10):
     df_pca = pd.DataFrame(reduced, index=df_scaled.index, columns=[f'PC{i+1}' for i in range(n_components)])
     return df_pca, pca
 
-def fit_knn_model(df_pca, n_neighbors=6):
+def fit_knn_model(df_pca, n_neighbors=11):
     knn = NearestNeighbors(n_neighbors=n_neighbors, metric='cosine')
     knn.fit(df_pca)
     return knn
