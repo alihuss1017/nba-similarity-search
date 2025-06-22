@@ -19,12 +19,11 @@ An interactive web app that allows users to find NBA players with statistically 
 ---
 
 ## 📁 Project Structure
-nba-similarity-search/
-├── app.py # Main Streamlit UI
-├── utils.py # Data cleaning, PCA, and k-NN logic
-├── 2025.csv # Cleaned per-game NBA stats from 2025
-├── requirements.txt # Python dependencies
-└── Dockerfile # (Optional) for Docker-based deployment
+- `streamlit_app.py` — Main Streamlit UI
+- `utils.py` — Helper functions for data cleaning, PCA, and k-NN
+- `2025.csv` — Cleaned per-game NBA stats from the 2025 season
+- `requirements.txt` — Python dependencies
+- `Dockerfile` — (Optional) for Docker-based deployment
 
 ---
 ## 🔧 Requirements
@@ -34,8 +33,18 @@ nba-similarity-search/
 - Scikit-learn
 
 ---
+## ▶️ Run with Streamlit
+```
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+---
 ## 🐳 Run with Docker
 ```
 docker build -t nba-similarity-search .
 docker run -p 8501:8501 nba-similarity-search 
 ```
+
+## 🏀 Data Source
+
+Player statistics sourced from [Basketball-Reference.com](https://www.basketball-reference.com/).  
