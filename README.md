@@ -1,5 +1,8 @@
 # 🏀 NBA Player Similarity Search
 
+![Project Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+
 An interactive web app that allows users to find NBA players with statistically similar profiles based on 2025 season per-game data. Built with **Streamlit**, **scikit-learn**, **PCA**, and **k-NN**, the app also features a 2D interactive visualization of player embeddings using **Plotly**.
 
 ---
